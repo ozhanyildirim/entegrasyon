@@ -1,0 +1,61 @@
+﻿@*
+
+*@
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+    @foreach (var product in ViewBag.products)
+    {
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img class="card-img-top" src="@product.Photo" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">@product.Name 
+</h5>
+                            <p class="card-text">@product.Price € </p>
+                            <a href="#" class="btn btn-primary">Sepete Ekle</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+    @*<div class="col-sm-4">
+            <div class="card" >
+                <div class="card-body" >
+                    <img class="card-img-top" src="https://www.carikcim.com/bagcikli-bayan-spor-ayakkabi-gri-yesil-paxton-30625-22-B.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Kinetix</h5>
+                        <p class="card-text">10 €</p>
+                        <a href="#" class="btn btn-primary">Sepete Ekle</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card" >
+                <div class="card-body" >
+                    <img class="card-img-top"  src="https://www.bestofayakkabi.com/images/large/bestofayakkabi/Nike%20Erkek%20Spor%20Ayakkab%20Air%20Zoom%20Peg%202171_ZOOM.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Nike</h5>
+                        <p class="card-text">150 € </p>
+                        <a href="#" class="btn btn-primary">Sepete Ekle</a>
+                    </div>
+                </div>
+            </div>
+        </div>*@
+
+    <br />
+    <a href="" class="btn btn-success">ÖDEME YAP</a>
+
+
+</body>
+</html>

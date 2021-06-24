@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!DOCTYPE html>
+<html>
+
+<body>
+    <div class="row">
+        @foreach (var product in ViewBag.products)
+        {
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">@product.Name</h5>
+                        <img class="card-img-top" src="@product.Photo" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">@product.Title</h5>
+                            <h5 href="" class=""> Price : @product.Price @product.Currency </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+    <div class="card-footer">
+        Total Price : 610.99 €
+    </div>
+    <br />
+    <a href="https://www.payjinn.com/PinTAN/UbwPTStep1?SessionCode=10000040051-038156175010" class="btn btn-success">ÖDEME YAP</a>
+</body>
+</html>
